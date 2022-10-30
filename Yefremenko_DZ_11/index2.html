@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    alert(document.lastChild.nextSibling); //Так. Елемент elem.lastChild завжди останній і він не має ссилки на nextSibling.
+    alert(document.body.children[0].previousSibling);// Ні, тому, що elem.children[0] - це потомок-елемент. А перед ним можуть бути інші вузли, наприклад previousSibling може бути текстовим вузлом.
+  </script>
+</body>
+</html>

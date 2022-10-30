@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <table border="1";>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+
+  <script>
+    let table = document.body.children[0];
+
+    for (let row = 0; row < table.rows.length; row++) {
+      for (let cell = 0; cell < table.rows[row].cells.length; cell++) {
+        table.rows[row].cells[cell].innerText = `${cell+1}:${row+1}`;
+      }
+    }
+
+    for (let i = 0; i < table.rows.length; i++) {
+      let row = table.rows[i];
+      row.cells[i].style.backgroundColor = 'red';
+    }
+  </script>
+</body>
+</html>
